@@ -7,9 +7,11 @@ export default function Navigation() {
 
   const navLinks = [
     { href: "#about", label: "about()" },
+    { href: "#experience", label: "experience[]" },
     { href: "#patents", label: "patents[]" },
     { href: "#projects", label: "projects{}" },
     { href: "#skills", label: "skills&" },
+    { href: "#blogs", label: "blogs{}" },
     { href: "#contact", label: "contact@" }
   ];
 

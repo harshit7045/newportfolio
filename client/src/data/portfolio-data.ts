@@ -3,8 +3,8 @@ export const personalInfo = {
   title: "Inventor & Software Developer",
   email: "22323@iiitu.ac.in",
   phone: "+91-9651908428",
-  github: "https://github.com/harshitmishra",
-  linkedin: "https://linkedin.com/in/harshitmishra",
+  github: "https://github.com/harshit7045",
+  linkedin: "https://www.linkedin.com/in/harshit7045/",
   education: {
     degree: "Bachelor of Technology in Information Technology",
     institution: "Indian Institute of Information Technology Una",
@@ -107,6 +107,50 @@ export const experience = [
       "Developed a smart wearable mask in a team of 3 to detect and monitor Sleep Bruxism using biosensors",
       "Honored with the Special Jury Award of ₹50,000 for outstanding innovation and technical execution"
     ]
+  },
+  {
+    id: 2,
+    title: "Cyber Security Extern",
+    company: "Sopra Steria",
+    period: "Jun 2024 - July 2024",
+    highlights: [
+      "Gained hands-on experience in cybersecurity practices and threat analysis",
+      "Worked on security assessment projects and vulnerability testing",
+      "Collaborated with security teams on enterprise-level security solutions"
+    ]
+  },
+  {
+    id: 3,
+    title: "Head of Public Speaking, Literature and Content",
+    company: "Eunoia (Cultural Club of IIIT Una)",
+    period: "June 2024 - Present",
+    highlights: [
+      "Leading the public speaking and literature wing of the cultural club",
+      "Organizing literary events and content creation workshops",
+      "Mentoring students in public speaking and creative writing"
+    ]
+  },
+  {
+    id: 4,
+    title: "Secretary of Public Speaking and Literature",
+    company: "Eunoia (Cultural Club of IIIT Una)",
+    period: "Jul 2023 - Jun 2024",
+    highlights: [
+      "Coordinated literary events and public speaking competitions",
+      "Managed club activities and member engagement initiatives",
+      "Developed creative content strategies for club promotions"
+    ]
+  },
+  {
+    id: 5,
+    title: "Contributor",
+    company: "Social Summer of Code",
+    period: "Jun 2023 - July 2023",
+    highlights: [
+      "Participated in open source program focused on social impact projects",
+      "Contributed to community-driven software development initiatives",
+      "Collaborated with developers on meaningful social technology solutions"
+    ]
   }
 ];
 
@@ -138,4 +182,37 @@ export const achievements = [
   "2 Patents filed in Military Technology and Healthcare sectors",
   "80% API response time improvement in Parking Lot Aggregator project",
   "62% efficiency improvement in PC Cooling Adapter system"
+];
+
+export const blogs = [
+  {
+    id: 1,
+    title: "Building Scalable IoT Solutions for Smart Cities",
+    excerpt: "Exploring the intersection of hardware and software in modern urban infrastructure development.",
+    content: "Deep dive into IoT architecture, sensor networks, and data processing pipelines for smart city applications...",
+    publishedAt: "2024-12-15",
+    readTime: 8,
+    tags: ["IoT", "Smart Cities", "Technology", "Innovation"],
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
+  },
+  {
+    id: 2,
+    title: "From Patent to Product: My Innovation Journey",
+    excerpt: "Lessons learned from filing patents and turning innovative ideas into working prototypes.",
+    content: "The journey from ideation to patent filing, prototype development, and real-world testing...",
+    publishedAt: "2024-11-28",
+    readTime: 6,
+    tags: ["Patents", "Innovation", "Entrepreneurship", "Product Development"],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
+  },
+  {
+    id: 3,
+    title: "Full-Stack Development Best Practices in 2024",
+    excerpt: "Modern approaches to building scalable web applications with MERN stack and cloud technologies.",
+    content: "Comprehensive guide to modern full-stack development practices, deployment strategies, and performance optimization...",
+    publishedAt: "2024-10-10",
+    readTime: 12,
+    tags: ["Web Development", "MERN Stack", "Best Practices", "Cloud Computing"],
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
+  }
 ];
