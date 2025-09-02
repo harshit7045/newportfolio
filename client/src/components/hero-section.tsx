@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
+import resumePdf from "@assets/harshitMishra_22323_Resume-1 final (2) (3)_1756832540793.pdf";
 
 export default function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -67,8 +69,19 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <Button
+            asChild
+            className="bg-primary text-primary-foreground px-8 py-3 hover:bg-secondary transition-colors duration-200 flex items-center gap-2"
+            data-testid="button-download-resume"
+          >
+            <a href={resumePdf} download="Harshit_Mishra_Resume.pdf">
+              <Download size={18} />
+              Download Resume
+            </a>
+          </Button>
+          <Button
             onClick={() => scrollToSection("#projects")}
-            className="bg-primary text-primary-foreground px-8 py-3 hover:bg-secondary transition-colors duration-200"
+            variant="outline"
+            className="border border-border px-8 py-3 hover-tech transition-all duration-200"
             data-testid="button-view-work"
           >
             View Work
