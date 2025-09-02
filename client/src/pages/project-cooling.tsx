@@ -36,12 +36,28 @@ export default function ProjectCooling() {
             Optimized cooling solution for laptops based on CPU usage using Python and Arduino
           </p>
           
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-8">
             {["Python", "Arduino Uno", "Psutil", "Serial Communication"].map((tech) => (
               <Badge key={tech} variant="outline" className="text-sm">
                 {tech}
               </Badge>
             ))}
+          </div>
+
+          {/* Project Links - Moved to top */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 p-6 border border-border bg-card">
+            <h2 className="text-xl font-bold mb-4 w-full text-center">Explore the Project</h2>
+            <div className="flex justify-center w-full">
+              <Button 
+                asChild
+                className="bg-primary text-primary-foreground px-8 py-3 hover:bg-secondary transition-colors duration-200 flex items-center gap-2"
+              >
+                <a href="https://github.com/harshit7045/Automated-cooling-fan-adapter" target="_blank" rel="noopener noreferrer">
+                  <Github size={18} />
+                  View Code & Documentation
+                </a>
+              </Button>
+            </div>
           </div>
         </motion.div>
 
@@ -231,26 +247,6 @@ export default function ProjectCooling() {
           </Card>
         </motion.div>
 
-        {/* Project Links */}
-        <motion.div 
-          className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.0 }}
-        >
-          <h2 className="text-2xl font-bold mb-6">Explore the Project</h2>
-          <div className="flex justify-center">
-            <Button 
-              asChild
-              className="bg-primary text-primary-foreground px-8 py-3 hover:bg-secondary transition-colors duration-200 flex items-center gap-2"
-            >
-              <a href="https://github.com/harshit7045/Automated-cooling-fan-adapter" target="_blank" rel="noopener noreferrer">
-                <Github size={18} />
-                View Code & Documentation
-              </a>
-            </Button>
-          </div>
-        </motion.div>
       </div>
     </div>
   );

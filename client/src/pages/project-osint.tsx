@@ -36,12 +36,50 @@ export default function ProjectOsint() {
             Efficient Open-Source Intelligence Gathering with 4 Integrated APIs
           </p>
           
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-8">
             {["MERN Stack", "OSINT APIs", "Stripe", "AWS", "Nginx"].map((tech) => (
               <Badge key={tech} variant="outline" className="text-sm">
                 {tech}
               </Badge>
             ))}
+          </div>
+
+          {/* Project Links - Moved to top */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 p-6 border border-border bg-card">
+            <h2 className="text-xl font-bold mb-4 w-full text-center">Explore the Project</h2>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
+              <Button 
+                asChild
+                className="bg-primary text-primary-foreground px-8 py-3 hover:bg-secondary transition-colors duration-200 flex items-center gap-2"
+              >
+                <a href="https://github.com/harshit7045/OSint-SaaS" target="_blank" rel="noopener noreferrer">
+                  <Github size={18} />
+                  View Code
+                </a>
+              </Button>
+              
+              <Button 
+                asChild
+                variant="outline"
+                className="border border-border px-8 py-3 hover-tech transition-all duration-200 flex items-center gap-2"
+              >
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink size={18} />
+                  Live Demo
+                </a>
+              </Button>
+              
+              <Button 
+                asChild
+                variant="outline"
+                className="border border-border px-8 py-3 hover-tech transition-all duration-200 flex items-center gap-2"
+              >
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Play size={18} />
+                  Watch Demo
+                </a>
+              </Button>
+            </div>
           </div>
         </motion.div>
 
@@ -214,48 +252,6 @@ export default function ProjectOsint() {
           </Card>
         </motion.div>
 
-        {/* Project Links */}
-        <motion.div 
-          className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.0 }}
-        >
-          <h2 className="text-2xl font-bold mb-6">Explore the Project</h2>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button 
-              asChild
-              className="bg-primary text-primary-foreground px-8 py-3 hover:bg-secondary transition-colors duration-200 flex items-center gap-2"
-            >
-              <a href="https://github.com/harshit7045/OSint-SaaS" target="_blank" rel="noopener noreferrer">
-                <Github size={18} />
-                View Code
-              </a>
-            </Button>
-            
-            <Button 
-              asChild
-              variant="outline"
-              className="border border-border px-8 py-3 hover-tech transition-all duration-200 flex items-center gap-2"
-            >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <ExternalLink size={18} />
-                Live Demo
-              </a>
-            </Button>
-            
-            <Button 
-              asChild
-              variant="outline"
-              className="border border-border px-8 py-3 hover-tech transition-all duration-200 flex items-center gap-2"
-            >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <Play size={18} />
-                Watch Demo
-              </a>
-            </Button>
-          </div>
-        </motion.div>
       </div>
     </div>
   );
