@@ -156,15 +156,34 @@ export const experience = [
 
 export const skills = {
   programming: [
-    { name: "JavaScript", level: 90 },
-    { name: "C++", level: 85 },
-    { name: "C", level: 80 }
+    { name: "JavaScript", level: 90, icon: "https://img.icons8.com/color/48/000000/javascript--v1.png" },
+    { name: "C++", level: 85, icon: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" },
+    { name: "C", level: 80, icon: "https://img.icons8.com/color/48/000000/c-programming.png" },
+    { name: "Java", level: 75, icon: "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" }
   ],
   webDevelopment: [
-    "HTML", "CSS", "JavaScript", "MongoDB", "Node.js", "Redis"
+    { name: "ReactJS", icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" },
+    { name: "Node.js", icon: "https://img.icons8.com/color/48/000000/nodejs.png" },
+    { name: "ExpressJS", icon: "https://img.icons8.com/fluency/48/000000/node-js.png" },
+    { name: "HTML5", icon: "https://img.icons8.com/color/48/000000/html-5--v1.png" },
+    { name: "CSS3", icon: "https://img.icons8.com/color/48/000000/css3.png" },
+    { name: "TailwindCSS", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png" }
+  ],
+  databases: [
+    { name: "MongoDB", icon: "https://img.icons8.com/color/48/000000/mongodb.png" },
+    { name: "MySQL", icon: "https://img.icons8.com/color/48/000000/mysql-logo.png" },
+    { name: "PostgreSQL", icon: "https://img.icons8.com/color/48/000000/postgreesql.png" },
+    { name: "Redis", icon: "https://img.icons8.com/?size=100&id=pHS3eRpynIRQ&format=png&color=000000" }
   ],
   tools: [
-    "Git & GitHub", "SQL", "AWS", "Nginx"
+    { name: "AWS", icon: "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
+    { name: "Docker", icon: "https://img.icons8.com/?size=100&id=22813&format=png&color=000000" },
+    { name: "Kubernetes", icon: "https://img.icons8.com/?size=100&id=cvzmaEA4kC0o&format=png&color=000000" },
+    { name: "Git", icon: "https://img.icons8.com/color/48/000000/git.png" },
+    { name: "GitHub", icon: "https://img.icons8.com/glyph-neue/48/ffffff/github.png" },
+    { name: "Linux", icon: "https://img.icons8.com/?size=100&id=17842&format=png&color=000000" },
+    { name: "Nginx", icon: "https://img.icons8.com/?size=100&id=t2x6DtCn5Zzx&format=png&color=000000" },
+    { name: "Kafka", icon: "https://img.icons8.com/?size=100&id=fOhLNqGJsUbJ&format=png&color=000000" }
   ],
   courses: [
     "Introduction to C",

@@ -19,7 +19,7 @@ export default function SkillsSection() {
           <span className="text-primary">const</span> skills = <span className="text-primary">{"{"}</span>
         </motion.h2>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Programming Languages */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -31,13 +31,21 @@ export default function SkillsSection() {
               <CardContent className="p-0">
                 <h3 className="text-xl font-bold mb-6 flex items-center" data-testid="programming-title">
                   <Code className="mr-3 text-primary" size={24} />
-                  Programming
+                  Programming Languages
                 </h3>
                 <div className="space-y-4" data-testid="programming-skills">
                   {skills.programming.map((skill) => (
                     <div key={skill.name}>
-                      <div className="flex justify-between mb-1">
-                        <span data-testid={`skill-name-${skill.name.toLowerCase()}`}>{skill.name}</span>
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="flex items-center space-x-3">
+                          <img 
+                            src={skill.icon} 
+                            alt={skill.name} 
+                            className="w-8 h-8 filter grayscale contrast-150"
+                            data-testid={`skill-icon-${skill.name.toLowerCase()}`}
+                          />
+                          <span data-testid={`skill-name-${skill.name.toLowerCase()}`}>{skill.name}</span>
+                        </div>
                         <span className="text-muted-foreground" data-testid={`skill-level-${skill.name.toLowerCase()}`}>{skill.level}%</span>
                       </div>
                       <Progress value={skill.level} className="h-2" data-testid={`skill-progress-${skill.name.toLowerCase()}`} />
@@ -59,21 +67,28 @@ export default function SkillsSection() {
               <CardContent className="p-0">
                 <h3 className="text-xl font-bold mb-6 flex items-center" data-testid="web-title">
                   <Globe className="mr-3 text-primary" size={24} />
-                  Web Stack
+                  Web Development
                 </h3>
-                <div className="space-y-3" data-testid="web-skills">
+                <div className="grid grid-cols-2 gap-3" data-testid="web-skills">
                   {skills.webDevelopment.map((tech) => (
-                    <div key={tech} className="flex items-center justify-between p-2 border border-border">
-                      <span data-testid={`web-tech-${tech.toLowerCase().replace(/\s+/g, '-')}`}>{tech}</span>
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <div key={tech.name} className="flex flex-col items-center p-3 border border-border hover-tech transition-all duration-200">
+                      <img 
+                        src={tech.icon} 
+                        alt={tech.name} 
+                        className="w-12 h-12 mb-2 filter grayscale contrast-150"
+                        data-testid={`web-icon-${tech.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      />
+                      <span className="text-sm text-center" data-testid={`web-tech-${tech.name.toLowerCase().replace(/\s+/g, '-')}`}>{tech.name}</span>
                     </div>
                   ))}
                 </div>
               </CardContent>
             </Card>
           </motion.div>
+        </div>
 
-          {/* Bolt & Technologies */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Databases */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -82,15 +97,50 @@ export default function SkillsSection() {
           >
             <Card className="border border-border p-6 bg-card">
               <CardContent className="p-0">
-                <h3 className="text-xl font-bold mb-6 flex items-center" data-testid="tools-title">
+                <h3 className="text-xl font-bold mb-6 flex items-center" data-testid="databases-title">
                   <Bolt className="mr-3 text-primary" size={24} />
-                  Bolt & Tech
+                  Databases
                 </h3>
-                <div className="space-y-3" data-testid="tools-skills">
+                <div className="grid grid-cols-2 gap-3" data-testid="database-skills">
+                  {skills.databases.map((db) => (
+                    <div key={db.name} className="flex flex-col items-center p-3 border border-border hover-tech transition-all duration-200">
+                      <img 
+                        src={db.icon} 
+                        alt={db.name} 
+                        className="w-12 h-12 mb-2 filter grayscale contrast-150"
+                        data-testid={`db-icon-${db.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      />
+                      <span className="text-sm text-center" data-testid={`db-name-${db.name.toLowerCase().replace(/\s+/g, '-')}`}>{db.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* Tools & Technologies */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <Card className="border border-border p-6 bg-card">
+              <CardContent className="p-0">
+                <h3 className="text-xl font-bold mb-6 flex items-center" data-testid="tools-title">
+                  <Lightbulb className="mr-3 text-primary" size={24} />
+                  Tools & DevOps
+                </h3>
+                <div className="grid grid-cols-2 gap-3" data-testid="tools-skills">
                   {skills.tools.map((tool) => (
-                    <div key={tool} className="flex items-center justify-between p-2 border border-border">
-                      <span data-testid={`tool-${tool.toLowerCase().replace(/\s+/g, '-')}`}>{tool}</span>
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <div key={tool.name} className="flex flex-col items-center p-3 border border-border hover-tech transition-all duration-200">
+                      <img 
+                        src={tool.icon} 
+                        alt={tool.name} 
+                        className="w-12 h-12 mb-2 filter grayscale contrast-150"
+                        data-testid={`tool-icon-${tool.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      />
+                      <span className="text-sm text-center" data-testid={`tool-name-${tool.name.toLowerCase().replace(/\s+/g, '-')}`}>{tool.name}</span>
                     </div>
                   ))}
                 </div>
