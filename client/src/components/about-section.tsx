@@ -24,7 +24,7 @@ export default function AboutSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-6" data-testid="about-subtitle">Inventor × Developer</h3>
+            <h3 className="text-2xl font-bold mb-6" data-testid="about-subtitle">Software Devloper × Inventor</h3>
             <p className="text-lg mb-6 leading-relaxed" data-testid="about-description-1">
               B.Tech Information Technology student at {personalInfo.education.institution} (CGPA: {personalInfo.education.cgpa}) with a passion for 
               transforming innovative ideas into practical solutions. My dual expertise spans 
@@ -62,11 +62,11 @@ export default function AboutSection() {
             {/* Engineering blueprint style diagram */}
             <div className="border border-border p-6 bg-card" data-testid="about-diagram">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                src="../../assets/images/profile.jpeg" 
                 alt="Technical engineering blueprint with detailed measurements" 
                 className="w-full h-48 object-cover filter contrast-150 grayscale"
               />
-              <p className="text-sm text-muted-foreground mt-2 text-center">System Architecture Approach</p>
+              <p className="text-sm text-muted-foreground mt-2 text-center">Harshit Mishra</p>
             </div>
 
             <div className="grid grid-cols-2 gap-4">

@@ -39,7 +39,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             data-testid="hero-subtitle"
           >
-            <span className="text-primary">class</span> Professional <span className="text-primary">extends</span> Inventor, Developer <span className="text-primary">{"{"}</span><br />
+            <span className="text-primary">class</span> Professional <span className="text-primary">extends</span> Software Devloper, Inventor <span className="text-primary">{"{"}</span><br />
             &nbsp;&nbsp;<span className="text-secondary">constructor()</span> <span className="text-primary">{"{"}</span><br />
             &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-muted-foreground">this.passion = ["Innovation", "Code", "Problem-Solving"];</span><br />
             &nbsp;&nbsp;<span className="text-primary">{"}"}</span><br />
@@ -56,7 +56,7 @@ export default function HeroSection() {
           data-testid="hero-diagram"
         >
           <img 
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600" 
+            src="../../assets/images/banner.png" 
             alt="Technical schematic diagram with circuit patterns" 
             className="w-full h-64 object-cover filter contrast-150 grayscale"
           />

@@ -39,7 +39,7 @@ export default function PatentsSection() {
                     <img 
                       src={patent.image} 
                       alt={`Technical diagram for ${patent.title}`}
-                      className="w-full h-32 object-cover filter contrast-150 grayscale"
+                      className="w-full h-70 object-cover filter contrast-150 grayscale"
                     />
                   </div>
 

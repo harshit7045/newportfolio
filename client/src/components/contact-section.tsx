@@ -31,13 +31,7 @@ export default function ContactSection() {
           </p>
 
           {/* Geometric pattern for contact section */}
-          <div className="border border-border p-8 bg-card mb-8" data-testid="contact-diagram">
-            <img 
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&h=300" 
-              alt="Geometric network pattern with interconnected nodes" 
-              className="w-full h-32 object-cover filter contrast-150 grayscale"
-            />
-          </div>
+          
         </motion.div>
 
         <motion.div 

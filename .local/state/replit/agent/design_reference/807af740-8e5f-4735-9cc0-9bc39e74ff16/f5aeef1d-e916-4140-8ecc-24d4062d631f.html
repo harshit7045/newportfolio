@@ -1,0 +1,725 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Mishra - Inventor & Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    border: "var(--border)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    mono: ["JetBrains Mono", "Fira Code", "Source Code Pro", "monospace"],
+                }
+            },
+        }
+    };
+    </script>
+    <style>
+        :root {
+            --background: hsl(0 0% 98%);
+            --foreground: hsl(0 0% 0%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(0 0% 0%);
+            --primary: hsl(0 0% 0%);
+            --primary-foreground: hsl(0 0% 100%);
+            --secondary: hsl(0 0% 20%);
+            --secondary-foreground: hsl(0 0% 100%);
+            --muted: hsl(0 0% 96%);
+            --muted-foreground: hsl(0 0% 40%);
+            --accent: hsl(0 0% 20%);
+            --accent-foreground: hsl(0 0% 100%);
+            --border: hsl(0 0% 20%);
+            --ring: hsl(0 0% 0%);
+            --radius: 0rem;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+        
+        body {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .tech-grid {
+            background-image: linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        
+        .hover-tech:hover {
+            background-color: hsl(0 0% 5%);
+            color: hsl(0 0% 100%);
+        }
+        
+        .diagram-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.3) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-background text-foreground">
+    <!-- Navigation -->
+    <!-- @COMPONENT: Navigation [sticky header with smooth scroll links] -->
+    <nav class="sticky top-0 bg-background/95 backdrop-blur border-b border-border z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold">
+                    <span class="text-primary">&lt;</span>
+                    harshit.mishra
+                    <span class="text-primary">/&gt;</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover-tech px-3 py-2 transition-all duration-200">about()</a>
+                    <a href="#patents" class="hover-tech px-3 py-2 transition-all duration-200">patents[]</a>
+                    <a href="#projects" class="hover-tech px-3 py-2 transition-all duration-200">projects{}</a>
+                    <a href="#skills" class="hover-tech px-3 py-2 transition-all duration-200">skills&</a>
+                    <a href="#contact" class="hover-tech px-3 py-2 transition-all duration-200">contact@</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- Hero Section -->
+    <!-- @COMPONENT: HeroSection [animated introduction with typing effect] -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="tech-grid absolute inset-0 opacity-30"></div>
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+            <div class="mb-8">
+                <h1 class="text-6xl md:text-8xl font-bold mb-4">
+                    <span class="text-primary">HARSHIT</span><br>
+                    <span class="text-secondary">MISHRA</span>
+                </h1>
+                <div class="text-xl md:text-2xl text-muted-foreground mb-8">
+                    <span class="text-primary">class</span> Professional <span class="text-primary">extends</span> Inventor, Developer <span class="text-primary">{</span><br>
+                    &nbsp;&nbsp;<span class="text-secondary">constructor()</span> <span class="text-primary">{</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-muted-foreground">this.passion = ["Innovation", "Code", "Problem-Solving"];</span><br>
+                    &nbsp;&nbsp;<span class="text-primary">}</span><br>
+                    <span class="text-primary">}</span>
+                </div>
+            </div>
+            
+            <!-- Technical line diagram illustration -->
+            <div class="border border-border p-8 bg-card">
+                <!-- A technical schematic diagram showing interconnected nodes and pathways -->
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600" alt="Technical schematic diagram with circuit patterns" class="w-full h-64 object-cover filter contrast-150 grayscale"/>
+            </div>
+            
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="#projects" class="bg-primary text-primary-foreground px-8 py-3 hover:bg-secondary transition-colors duration-200">
+                    View Work
+                </a>
+                <a href="#contact" class="border border-border px-8 py-3 hover-tech transition-all duration-200">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- About Section -->
+    <!-- @COMPONENT: AboutSection [biographical information with achievements] -->
+    <section id="about" class="py-20 bg-muted">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="text-primary">function</span> getAbout() <span class="text-primary">{</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Inventor × Developer</h3>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        B.Tech Information Technology student at IIIT Una (CGPA: 8.35) with a passion for 
+                        transforming innovative ideas into practical solutions. My dual expertise spans 
+                        cutting-edge invention and full-stack development.
+                    </p>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Selected as one of 60 students across India for Maker Bhavan Foundation (IITGN) 
+                        innovation program, where I developed breakthrough wearable technology for 
+                        healthcare applications.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-trophy text-primary"></i>
+                            <span>Special Jury Award ₹50,000 for Outstanding Innovation</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-patent text-primary"></i>
+                            <span>2 Patents Filed in Military Tech & Healthcare</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-code text-primary"></i>
+                            <span>MERN Stack Expert with IoT Integration</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- Engineering blueprint style diagram -->
+                    <div class="border border-border p-6 bg-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Technical engineering blueprint with detailed measurements" class="w-full h-48 object-cover filter contrast-150 grayscale"/>
+                        <p class="text-sm text-muted-foreground mt-2 text-center">System Architecture Approach</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 border border-border">
+                            <div class="text-2xl font-bold text-primary">2026</div>
+                            <div class="text-sm">Graduation Year</div>
+                        </div>
+                        <div class="text-center p-4 border border-border">
+                            <div class="text-2xl font-bold text-primary">3+</div>
+                            <div class="text-sm">Major Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <span class="text-primary text-xl">}</span>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: AboutSection -->
+
+    <!-- Patents Section -->
+    <!-- @COMPONENT: PatentsSection [showcase of filed patents with technical details] -->
+    <section id="patents" class="py-20">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="text-primary">const</span> patents = <span class="text-primary">[</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Patent 1: RFID Weapon Detection -->
+                <div class="border border-border p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-xl font-bold mb-2">RFID-Based Weapon Detection</h3>
+                        <span class="text-sm text-muted-foreground">Jan 2025 - Apr 2025</span>
+                    </div>
+                    
+                    <!-- Technical diagram for RFID system -->
+                    <div class="mb-6 diagram-pattern p-4">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="RFID technology circuit diagram with antenna patterns" class="w-full h-32 object-cover filter contrast-150 grayscale"/>
+                    </div>
+                    
+                    <p class="text-muted-foreground mb-4">
+                        Friend-or-Foe Identification System for military applications. 
+                        Prototype development focusing on enhanced situational awareness 
+                        in defense zones.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-muted text-muted-foreground text-sm">RFID Technology</span>
+                        <span class="px-3 py-1 bg-muted text-muted-foreground text-sm">Military Tech</span>
+                        <span class="px-3 py-1 bg-muted text-muted-foreground text-sm">Security Systems</span>
+                    </div>
+                </div>
+                
+                <!-- Patent 2: Bruxism Detection Mask -->
+                <div class="border border-border p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-xl font-bold mb-2">Smart Bruxism Detection Mask</h3>
+                        <span class="text-sm text-muted-foreground">May 2025 - July 2025</span>
+                    </div>
+                    
+                    <!-- Technical diagram for biosensor system -->
+                    <div class="mb-6 diagram-pattern p-4">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Biosensor circuit board with intricate electronic pathways" class="w-full h-32 object-cover filter contrast-150 grayscale"/>
+                    </div>
+                    
+                    <p class="text-muted-foreground mb-4">
+                        Provisional patent for wearable sleep mask detecting sleep bruxism 
+                        affecting 20% of adults. Integrated biosensors with rigorous 
+                        prototype testing.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-muted text-muted-foreground text-sm">Biosensors</span>
+                        <span class="px-3 py-1 bg-muted text-muted-foreground text-sm">Healthcare Tech</span>
+                        <span class="px-3 py-1 bg-muted text-muted-foreground text-sm">Wearables</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <span class="text-primary text-xl">];</span>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: PatentsSection -->
+
+    <!-- Projects Section -->
+    <!-- @COMPONENT: ProjectsSection [detailed project showcase with technical diagrams] -->
+    <section id="projects" class="py-20 bg-muted">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="text-primary">class</span> Projects <span class="text-primary">{</span>
+            </h2>
+            
+            <!-- Project Filter -->
+            <div class="flex justify-center mb-12">
+                <div class="flex space-x-4 border border-border p-1">
+                    <button class="px-6 py-2 bg-primary text-primary-foreground" data-filter="all">All</button>
+                    <button class="px-6 py-2 hover-tech transition-all duration-200" data-filter="web">Web</button>
+                    <button class="px-6 py-2 hover-tech transition-all duration-200" data-filter="iot">IoT</button>
+                    <button class="px-6 py-2 hover-tech transition-all duration-200" data-filter="hardware">Hardware</button>
+                </div>
+            </div>
+            
+            <div class="space-y-12">
+                <!-- Project 1: Parking Lot Aggregator -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center" data-category="web iot">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">
+                            Parking Lot Aggregator <span class="text-primary">(FASTag)</span>
+                        </h3>
+                        <p class="text-lg mb-6 leading-relaxed">
+                            Comprehensive MERN stack platform optimizing urban parking with RFID (FASTag) 
+                            technology. Features real-time updates, multiple booking types, and minimal 
+                            hardware cost of ₹20,000.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-microchip text-primary"></i>
+                                <span>ESP32 + RFID Integration</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-bolt text-primary"></i>
+                                <span>80% API Response Time Reduction</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-cloud text-primary"></i>
+                                <span>AWS Deployment with Nginx</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <a href="#" class="flex items-center space-x-2 text-primary hover:text-secondary transition-colors">
+                                <i class="fab fa-github"></i>
+                                <span data-mock="true">GitHub</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-2 text-primary hover:text-secondary transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-mock="true">Live Demo</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-2 text-primary hover:text-secondary transition-colors">
+                                <i class="fas fa-play"></i>
+                                <span data-mock="true">Video</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-border p-6 bg-card">
+                        <!-- System architecture diagram for parking system -->
+                        <img src="https://pixabay.com/get/gf0cc3ad5be52fcab9e70da21a1c6d8ad99bbfa66cd018e997b78bcc15051435d2e1748dd8b3c3f30c2650301a4b836520aa0e6fc57781b41e44262372b4490d0_1280.jpg" alt="Complex system architecture diagram showing interconnected modules" class="w-full h-64 object-cover filter contrast-150 grayscale mb-4"/>
+                        <div class="text-sm text-muted-foreground">System Architecture: IoT + Web Integration</div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: OSint SaaS Platform -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center" data-category="web">
+                    <div class="border border-border p-6 bg-card order-2 lg:order-1">
+                        <!-- Network diagram for OSINT platform -->
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Network topology diagram with connected nodes and data flow" class="w-full h-64 object-cover filter contrast-150 grayscale mb-4"/>
+                        <div class="text-sm text-muted-foreground">API Integration Architecture</div>
+                    </div>
+                    
+                    <div class="order-1 lg:order-2">
+                        <h3 class="text-2xl font-bold mb-4">
+                            OSint SaaS Platform
+                        </h3>
+                        <p class="text-lg mb-6 leading-relaxed">
+                            Efficient open-source intelligence gathering platform with 4 integrated APIs. 
+                            Features secure Stripe payment processing and pay-per-search model with 
+                            user balance tracking.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-search text-primary"></i>
+                                <span>4 OSINT APIs Integrated</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-shield-alt text-primary"></i>
+                                <span>Secure Payment Processing</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-server text-primary"></i>
+                                <span>Full MERN Stack Implementation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <a href="#" class="flex items-center space-x-2 text-primary hover:text-secondary transition-colors">
+                                <i class="fab fa-github"></i>
+                                <span data-mock="true">GitHub</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-2 text-primary hover:text-secondary transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-mock="true">Live Demo</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-2 text-primary hover:text-secondary transition-colors">
+                                <i class="fas fa-play"></i>
+                                <span data-mock="true">Video</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: PC Cooling Adapter -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center" data-category="hardware">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">
+                            Automatic PC Cooling Pad Adapter
+                        </h3>
+                        <p class="text-lg mb-6 leading-relaxed">
+                            Smart cooling solution using Python and Arduino Uno for CPU usage-based 
+                            activation. Transforms regular cooling pads into intelligent systems 
+                            with 62% efficiency improvement.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-thermometer-half text-primary"></i>
+                                <span>CPU Usage Monitoring</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-chart-line text-primary"></i>
+                                <span>62% Efficiency Improvement</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-cog text-primary"></i>
+                                <span>Arduino + Python Integration</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <a href="#" class="flex items-center space-x-2 text-primary hover:text-secondary transition-colors">
+                                <i class="fab fa-github"></i>
+                                <span data-mock="true">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-border p-6 bg-card">
+                        <!-- Hardware schematic diagram -->
+                        <img src="https://pixabay.com/get/g9f682f728fb11708a3882b344cda756990a9bf5b6501c4cfec670082c57a76c6195b5e1261fdeb236b3205f25d7427e50d004fca872cd010293049ce873538e6_1280.jpg" alt="Electronic circuit schematic with Arduino components" class="w-full h-64 object-cover filter contrast-150 grayscale mb-4"/>
+                        <div class="text-sm text-muted-foreground">Hardware Control System Design</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <span class="text-primary text-xl">}</span>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ProjectsSection -->
+
+    <!-- Skills Section -->
+    <!-- @COMPONENT: SkillsSection [technical skills visualization with progress indicators] -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="text-primary">const</span> skills = <span class="text-primary">{</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Programming Languages -->
+                <div class="border border-border p-6 bg-card">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-code mr-3 text-primary"></i>
+                        Programming
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>JavaScript</span>
+                                <span class="text-muted-foreground">90%</span>
+                            </div>
+                            <div class="w-full bg-muted h-2">
+                                <div class="bg-primary h-2" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>C++</span>
+                                <span class="text-muted-foreground">85%</span>
+                            </div>
+                            <div class="w-full bg-muted h-2">
+                                <div class="bg-primary h-2" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>C</span>
+                                <span class="text-muted-foreground">80%</span>
+                            </div>
+                            <div class="w-full bg-muted h-2">
+                                <div class="bg-primary h-2" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Web Development -->
+                <div class="border border-border p-6 bg-card">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-globe mr-3 text-primary"></i>
+                        Web Stack
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-2 border border-border">
+                            <span>React.js</span>
+                            <i class="fab fa-react text-primary"></i>
+                        </div>
+                        <div class="flex items-center justify-between p-2 border border-border">
+                            <span>Node.js</span>
+                            <i class="fab fa-node-js text-primary"></i>
+                        </div>
+                        <div class="flex items-center justify-between p-2 border border-border">
+                            <span>MongoDB</span>
+                            <i class="fas fa-database text-primary"></i>
+                        </div>
+                        <div class="flex items-center justify-between p-2 border border-border">
+                            <span>Redis</span>
+                            <i class="fas fa-memory text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="border border-border p-6 bg-card">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-tools mr-3 text-primary"></i>
+                        Tools & Tech
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-2 border border-border">
+                            <span>AWS</span>
+                            <i class="fab fa-aws text-primary"></i>
+                        </div>
+                        <div class="flex items-center justify-between p-2 border border-border">
+                            <span>Git & GitHub</span>
+                            <i class="fab fa-git-alt text-primary"></i>
+                        </div>
+                        <div class="flex items-center justify-between p-2 border border-border">
+                            <span>Arduino</span>
+                            <i class="fas fa-microchip text-primary"></i>
+                        </div>
+                        <div class="flex items-center justify-between p-2 border border-border">
+                            <span>Nginx</span>
+                            <i class="fas fa-server text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Innovation Areas -->
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="border border-border p-8 bg-card">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-lightbulb mr-3 text-primary"></i>
+                        Innovation Focus
+                    </h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>• IoT & Hardware Integration</li>
+                        <li>• Healthcare Technology Solutions</li>
+                        <li>• Military & Security Systems</li>
+                        <li>• Smart City Infrastructure</li>
+                    </ul>
+                </div>
+                
+                <div class="border border-border p-8 bg-card">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-graduation-cap mr-3 text-primary"></i>
+                        Academic Foundation
+                    </h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>• Data Structures & Algorithms</li>
+                        <li>• Database Management Systems</li>
+                        <li>• Computer Networks</li>
+                        <li>• Operating Systems</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <span class="text-primary text-xl">};</span>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: SkillsSection -->
+
+    <!-- Contact Section -->
+    <!-- @COMPONENT: ContactSection [professional contact information and links] -->
+    <section id="contact" class="py-20 bg-muted">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-12">
+                <span class="text-primary">function</span> initializeContact() <span class="text-primary">{</span>
+            </h2>
+            
+            <div class="mb-12">
+                <p class="text-xl mb-6 leading-relaxed">
+                    Ready to collaborate on innovative projects or discuss opportunities? 
+                    Let's connect and build something extraordinary together.
+                </p>
+                
+                <!-- Geometric pattern for contact section -->
+                <div class="border border-border p-8 bg-card mb-8">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&h=300" alt="Geometric network pattern with interconnected nodes" class="w-full h-32 object-cover filter contrast-150 grayscale"/>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="border border-border p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+                    <i class="fas fa-envelope text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <a href="mailto:22323@iiitu.ac.in" class="text-muted-foreground hover:text-primary transition-colors">
+                        22323@iiitu.ac.in
+                    </a>
+                </div>
+                
+                <div class="border border-border p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+                    <i class="fas fa-phone text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Phone</h3>
+                    <a href="tel:+919651908428" class="text-muted-foreground hover:text-primary transition-colors">
+                        +91-9651908428
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex justify-center space-x-8 mb-12">
+                <a href="#" class="text-3xl hover-tech p-4 transition-all duration-200" data-mock="true">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="text-3xl hover-tech p-4 transition-all duration-200" data-mock="true">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-3xl hover-tech p-4 transition-all duration-200" data-mock="true">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+            </div>
+            
+            <div class="border border-border p-8 bg-card">
+                <h3 class="text-xl font-bold mb-4">Current Status</h3>
+                <p class="text-muted-foreground">
+                    <span class="text-primary">status:</span> "Seeking internship and collaboration opportunities"<br>
+                    <span class="text-primary">location:</span> "IIIT Una, Himachal Pradesh"<br>
+                    <span class="text-primary">availability:</span> "Open to remote and on-site opportunities"
+                </p>
+            </div>
+            
+            <div class="text-center mt-12">
+                <span class="text-primary text-xl">}</span>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ContactSection -->
+
+    <!-- Footer -->
+    <!-- @COMPONENT: Footer [copyright and additional navigation] -->
+    <footer class="py-8 border-t border-border">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-muted-foreground">
+                    <span class="text-primary">©</span> 2024 Harshit Mishra. 
+                    <span class="text-primary">console.log(</span>"Innovating the future"<span class="text-primary">);</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        (function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Project filtering
+            const filterButtons = document.querySelectorAll('[data-filter]');
+            const projectItems = document.querySelectorAll('[data-category]');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-primary-foreground');
+                        btn.classList.add('hover-tech');
+                    });
+                    this.classList.add('bg-primary', 'text-primary-foreground');
+                    this.classList.remove('hover-tech');
+                    
+                    // Filter projects
+                    projectItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category').includes(filter)) {
+                            item.style.display = 'grid';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Mobile navigation toggle
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // TODO: Implement mobile menu toggle functionality
+                    console.log('Mobile menu toggle clicked');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

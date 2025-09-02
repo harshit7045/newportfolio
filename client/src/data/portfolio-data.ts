@@ -21,7 +21,7 @@ export const patents = [
     status: "Prototype Development",
     description: "Developed RFID-enabled system to detect weapon-carrying individuals and classify them as friendly or hostile, enhancing situational awareness in military zones.",
     tags: ["RFID Technology", "Military Tech", "Security Systems"],
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
+    image: "../../assets/images/rfid.png"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const patents = [
     status: "Provisional Patent",
     description: "Filed patent for wearable sleep mask detecting sleep bruxism, a prevalent sleep disorder affecting 20% of adults, following rigorous prototype testing and refinement.",
     tags: ["Biosensors", "Healthcare Tech", "Wearables"],
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
+    image: "../../assets/images/mask.png"
   }
 ];
 
@@ -102,6 +102,7 @@ export const experience = [
     title: "Research and Development Intern",
     company: "Maker Bhavan Foundation (IITGN)",
     period: "May 2025 - July 2025",
+    img:"../../assets/images/maker.png",
     highlights: [
       "Selected as one of 60 students across India for a prestigious national-level innovation program",
       "Developed a smart wearable mask in a team of 3 to detect and monitor Sleep Bruxism using biosensors",
@@ -113,45 +114,15 @@ export const experience = [
     title: "Cyber Security Extern",
     company: "Sopra Steria",
     period: "Jun 2024 - July 2024",
+    img:"../../assets/images/sopra.png",
     highlights: [
       "Gained hands-on experience in cybersecurity practices and threat analysis",
       "Worked on security assessment projects and vulnerability testing",
       "Collaborated with security teams on enterprise-level security solutions"
     ]
   },
-  {
-    id: 3,
-    title: "Head of Public Speaking, Literature and Content",
-    company: "Eunoia (Cultural Club of IIIT Una)",
-    period: "June 2024 - Present",
-    highlights: [
-      "Leading the public speaking and literature wing of the cultural club",
-      "Organizing literary events and content creation workshops",
-      "Mentoring students in public speaking and creative writing"
-    ]
-  },
-  {
-    id: 4,
-    title: "Secretary of Public Speaking and Literature",
-    company: "Eunoia (Cultural Club of IIIT Una)",
-    period: "Jul 2023 - Jun 2024",
-    highlights: [
-      "Coordinated literary events and public speaking competitions",
-      "Managed club activities and member engagement initiatives",
-      "Developed creative content strategies for club promotions"
-    ]
-  },
-  {
-    id: 5,
-    title: "Contributor",
-    company: "Social Summer of Code",
-    period: "Jun 2023 - July 2023",
-    highlights: [
-      "Participated in open source program focused on social impact projects",
-      "Contributed to community-driven software development initiatives",
-      "Collaborated with developers on meaningful social technology solutions"
-    ]
-  }
+  
+ 
 ];
 
 export const skills = {

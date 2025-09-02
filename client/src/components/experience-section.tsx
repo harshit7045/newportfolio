@@ -7,7 +7,7 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="py-20 bg-muted" data-testid="experience-section">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <motion.h2 
+        <motion.h2
           className="text-4xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -43,10 +43,18 @@ export default function ExperienceSection() {
                     </div>
 
                     <div className="md:col-span-2">
-                      <div className="border border-border p-4 bg-background mb-4" data-testid={`experience-diagram-${exp.id}`}>
-                        <div className="diagram-pattern h-24 w-full opacity-30"></div>
+                      <div className="md:col-span-2">
+                        <div className="border border-border p-1 bg-background mb-4" data-testid={`experience-diagram-${exp.id}`}>
+                          {/* Replace the 'diagram-pattern' div with your image,
+            and adjust the image's classes to match the 'h-24 w-full' */}
+                          <img
+                            className="h-30 w-full object-cover filter contrast-150 grayscale"
+                            src={exp.img}
+                            alt={`${exp.company} - ${exp.title} diagram`}
+                          />
+                        </div>
                       </div>
-                      
+
                       <div className="space-y-3" data-testid={`experience-highlights-${exp.id}`}>
                         {exp.highlights.map((highlight, highlightIndex) => (
                           <div key={highlightIndex} className="flex items-start space-x-3">
@@ -63,7 +71,7 @@ export default function ExperienceSection() {
           ))}
         </div>
 
-        <motion.div 
+        <motion.div
           className="text-center mt-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
