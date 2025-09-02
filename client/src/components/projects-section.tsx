@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -100,36 +101,17 @@ export default function ProjectsSection() {
                   </div>
 
                   <div className="flex space-x-4" data-testid={`project-links-${project.id}`}>
-                    {project.links.github && (
-                      <a 
-                        href={project.links.github} 
-                        className="flex items-center space-x-2 text-primary hover:text-secondary transition-colors"
-                        data-testid={`link-github-${project.id}`}
-                      >
-                        <Github size={16} />
-                        <span>GitHub</span>
-                      </a>
-                    )}
-                    {project.links.live && (
-                      <a 
-                        href={project.links.live} 
-                        className="flex items-center space-x-2 text-primary hover:text-secondary transition-colors"
-                        data-testid={`link-live-${project.id}`}
-                      >
+                    <Button 
+                      asChild
+                      variant="outline"
+                      className="border border-border px-4 py-2 hover-tech transition-all duration-200 flex items-center gap-2"
+                      data-testid={`link-details-${project.id}`}
+                    >
+                      <Link href={`/projects/${project.id === 1 ? 'parkivia' : project.id === 2 ? 'osint' : 'cooling'}`}>
                         <ExternalLink size={16} />
-                        <span>Live Demo</span>
-                      </a>
-                    )}
-                    {project.links.demo && (
-                      <a 
-                        href={project.links.demo} 
-                        className="flex items-center space-x-2 text-primary hover:text-secondary transition-colors"
-                        data-testid={`link-demo-${project.id}`}
-                      >
-                        <Play size={16} />
-                        <span>Video</span>
-                      </a>
-                    )}
+                        View Details
+                      </Link>
+                    </Button>
                   </div>
                 </div>
 
