@@ -62,7 +62,7 @@ export default function AboutSection() {
             {/* Engineering blueprint style diagram */}
             <div className="border border-border p-6 bg-card" data-testid="about-diagram">
               <img 
-                src="../../assets/images/profile.jpeg" 
+                src="/images/profile.jpeg" 
                 alt="Technical engineering blueprint with detailed measurements" 
                 className="w-full h-48 object-cover filter contrast-150 grayscale"
               />

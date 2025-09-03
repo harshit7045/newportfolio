@@ -56,7 +56,7 @@ export default function HeroSection() {
           data-testid="hero-diagram"
         >
           <img 
-            src="../../assets/images/banner.png" 
+            src="/images/banner.png" 
             alt="Technical schematic diagram with circuit patterns" 
             className="w-full h-64 object-cover filter contrast-150 grayscale"
           />

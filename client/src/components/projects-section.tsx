@@ -118,7 +118,7 @@ export default function ProjectsSection() {
                 <div className={`border border-border p-6 bg-card ${index % 2 === 1 ? "lg:order-1" : ""}`}>
                   <img 
                     src={project.image} 
-                    alt={`Technical diagram for ${project.title}`}
+                    alt={` ${project.title}`}
                     className="w-full h-64 object-cover filter contrast-150 grayscale mb-4"
                     data-testid={`project-image-${project.id}`}
                   />

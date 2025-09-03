@@ -11,7 +11,7 @@ export default function Navigation() {
     { href: "#patents", label: "patents[]" },
     { href: "#projects", label: "projects{}" },
     { href: "#skills", label: "skills&" },
-    { href: "#blogs", label: "blogs{}" },
+    // { href: "#blogs", label: "blogs{}" },
     { href: "#contact", label: "contact@" }
   ];
 

@@ -69,8 +69,8 @@ export default function ProjectCooling() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <img 
-            src="https://pixabay.com/get/g9f682f728fb11708a3882b344cda756990a9bf5b6501c4cfec670082c57a76c6195b5e1261fdeb236b3205f25d7427e50d004fca872cd010293049ce873538e6_1280.jpg" 
-            alt="Automatic cooling system hardware diagram" 
+            src="/images/cooling.png"
+            alt="Automatic cooling system" 
             className="w-full h-64 object-cover filter contrast-150 grayscale"
           />
           <p className="text-sm text-muted-foreground mt-4 text-center">Hardware Control System Architecture</p>

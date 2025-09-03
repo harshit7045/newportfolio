@@ -21,7 +21,7 @@ export const patents = [
     status: "Prototype Development",
     description: "Developed RFID-enabled system to detect weapon-carrying individuals and classify them as friendly or hostile, enhancing situational awareness in military zones.",
     tags: ["RFID Technology", "Military Tech", "Security Systems"],
-    image: "../../assets/images/rfid.png"
+    image: "/images/rfid.png"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const patents = [
     status: "Provisional Patent",
     description: "Filed patent for wearable sleep mask detecting sleep bruxism, a prevalent sleep disorder affecting 20% of adults, following rigorous prototype testing and refinement.",
     tags: ["Biosensors", "Healthcare Tech", "Wearables"],
-    image: "../../assets/images/mask.png"
+    image: "/images/mask.png"
   }
 ];
 
@@ -55,7 +55,7 @@ export const projects = [
       live: "#",
       demo: "#"
     },
-    image: "https://pixabay.com/get/gf0cc3ad5be52fcab9e70da21a1c6d8ad99bbfa66cd018e997b78bcc15051435d2e1748dd8b3c3f30c2650301a4b836520aa0e6fc57781b41e44262372b4490d0_1280.jpg"
+    image: "/images/parking.png"
   },
   {
     id: 2,
@@ -75,7 +75,7 @@ export const projects = [
       live: "#",
       demo: "#"
     },
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500"
+    image: "/images/osint.png"
   },
   {
     id: 3,
@@ -92,7 +92,7 @@ export const projects = [
     links: {
       github: "#"
     },
-    image: "https://pixabay.com/get/g9f682f728fb11708a3882b344cda756990a9bf5b6501c4cfec670082c57a76c6195b5e1261fdeb236b3205f25d7427e50d004fca872cd010293049ce873538e6_1280.jpg"
+    image: "/images/cooling.png"
   }
 ];
 
@@ -102,7 +102,7 @@ export const experience = [
     title: "Research and Development Intern",
     company: "Maker Bhavan Foundation (IITGN)",
     period: "May 2025 - July 2025",
-    img:"../../assets/images/maker.png",
+    img: "/images/maker.png",
     highlights: [
       "Selected as one of 60 students across India for a prestigious national-level innovation program",
       "Developed a smart wearable mask in a team of 3 to detect and monitor Sleep Bruxism using biosensors",
@@ -114,7 +114,7 @@ export const experience = [
     title: "Cyber Security Extern",
     company: "Sopra Steria",
     period: "Jun 2024 - July 2024",
-    img:"../../assets/images/sopra.png",
+    img: "/images/sopra.png",
     highlights: [
       "Gained hands-on experience in cybersecurity practices and threat analysis",
       "Worked on security assessment projects and vulnerability testing",

@@ -7,7 +7,7 @@ import { Link } from "wouter";
 
 export default function ProjectOsint() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground" background="../assets/images/parking-space-1487891_1280.jpg">
       <div className="max-w-4xl mx-auto px-6 py-20">
         {/* Back Button */}
         <motion.div 
@@ -31,7 +31,7 @@ export default function ProjectOsint() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl font-bold mb-4">OSint SaaS Platform</h1>
+          <h1 className="text-4xl font-bold mb-4">OSInt SaaS Platform</h1>
           <p className="text-xl text-muted-foreground mb-6">
             Efficient Open-Source Intelligence Gathering with 4 Integrated APIs
           </p>
@@ -63,7 +63,7 @@ export default function ProjectOsint() {
                 variant="outline"
                 className="border border-border px-8 py-3 hover-tech transition-all duration-200 flex items-center gap-2"
               >
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="http://osint.harshitmishra.co.in/" target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={18} />
                   Live Demo
                 </a>
@@ -74,14 +74,18 @@ export default function ProjectOsint() {
                 variant="outline"
                 className="border border-border px-8 py-3 hover-tech transition-all duration-200 flex items-center gap-2"
               >
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/watch?v=ISAV9kJAqSQ" target="_blank" rel="noopener noreferrer">
                   <Play size={18} />
                   Watch Demo
                 </a>
               </Button>
             </div>
+            
           </div>
         </motion.div>
+         <div className="w-full text-center mt-4 text-sm text-gray-500 mb-6">
+          <span className="font-semibold">Demo Credentials:</span> <span className="bg-gray-200 rounded p-1">1234@gmail.com</span> / <span className="bg-gray-200 rounded p-1">12345678</span>
+        </div>
 
         {/* Technical Diagram */}
         <motion.div 
@@ -91,7 +95,7 @@ export default function ProjectOsint() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
+            src="/images/osint.png"
             alt="OSint platform system architecture" 
             className="w-full h-64 object-cover filter contrast-150 grayscale"
           />
@@ -252,6 +256,8 @@ export default function ProjectOsint() {
           </Card>
         </motion.div>
 
+        {/* Demo Credentials - New Section */}
+        
       </div>
     </div>
   );
